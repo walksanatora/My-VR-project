@@ -1,4 +1,4 @@
-﻿{
+{
     "files.exclude":
     {
         "**/.DS_Store":true,
@@ -51,6 +51,19 @@
         "Obj/":true,
         "ProjectSettings/":true,
         "temp/":true,
-        "Temp/":true
+        "Temp/":true,
+        "Assets/Scripts":false,
+        "Assets/Materials":true,
+        "Assets/Models":true,
+        "Assets/Prefabs":true,
+        "Assets/Samples":true,
+        "Assets/Scenes":true,
+        "Assets/Textures":true,
+        "Assets/XR":true,
+        "Assets/XRI":true,
+        "Assets/Resources":true,
+        "Logs/":true,
+        "Packages/":true,
+
     }
 }
