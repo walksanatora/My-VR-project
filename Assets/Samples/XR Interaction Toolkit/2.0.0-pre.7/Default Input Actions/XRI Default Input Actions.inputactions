@@ -1087,7 +1087,7 @@
             ]
         },
         {
-            "name": "XRI CustomRight",
+            "name": "StartRight",
             "id": "577c3674-6447-4420-813c-ea8350b1e6b0",
             "actions": [
                 {
@@ -1113,7 +1113,7 @@
                 {
                     "name": "",
                     "id": "8ac2f9d7-17c9-46d2-8026-8129327b5109",
-                    "path": "<OculusTouchController>{RightHand}/thumbstick/y",
+                    "path": "<OpenVROculusTouchController>{RightHand}/thumbstick/y",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -1124,7 +1124,7 @@
                 {
                     "name": "",
                     "id": "b68c2430-61a1-4100-8dbd-4e8d30689042",
-                    "path": "<OculusTouchController>{RightHand}/primaryButton",
+                    "path": "<OpenVROculusTouchController>{RightHand}/primaryButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

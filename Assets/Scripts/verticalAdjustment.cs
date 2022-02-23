@@ -7,8 +7,8 @@ using Unity.XR.CoreUtils;
 
 public class verticalAdjustment : MonoBehaviour
 {
-    public InputActionRefrence yAxisRight = null;
-    public InputActionRefrence AButton = null;
+    public InputActionReference yAxisRight = null;
+    public InputActionReference AButton = null;
     public XROrigin XROriginObj;
 
     // Start is called before the first frame update
@@ -26,7 +26,7 @@ public class verticalAdjustment : MonoBehaviour
     void Update()
     {
         float current = XROriginObj.CameraYOffset;
-        float newOffset = current + 0;
+        float newOffset = current + yAxisRight.action.ReadValue<float>();
         XROriginObj.CameraYOffset = newOffset;
         GlobalValues.YOffset = newOffset;
     }
