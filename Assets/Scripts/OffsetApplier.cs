@@ -7,11 +7,15 @@ public class OffsetApplier : MonoBehaviour
 {
     
     public XROrigin XROriginObj;
+    public Transform CameraPosition;
+    public float cameraOffset;
     // Start is called before the first frame update
     void Start()
     {
         float current = XROriginObj.CameraYOffset;
-        float newOffset = current + GlobalValues.YOffset;
-        XROriginObj.CameraYOffset = newOffset * Time.deltaTime;
+        float camY = CameraPosition.position.y;
+        float offset = cameraOffset - camY;
+        float newYOffset = current + offset;
+        XROriginObj.CameraYOffset = newYOffset;
     }
 }
